@@ -1,7 +1,7 @@
 # OOP2026
 ### Homework1
 ```java
-public class homework1{
+public class Homework1{
   public static void main(String []args){
     int i, j;
     for(i=0; i<10; i++) {
