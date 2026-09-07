@@ -1,7 +1,7 @@
 # OOP2026
 ### Homework1
 ```java
-public class Homework1{
+public class homework1{
   public static void main(String []args){
     int i, j;
     for(i=0; i<10; i++) {
@@ -14,4 +14,4 @@ public class Homework1{
 }
 
 ```
-<img width="399" height="266" alt="homework1" src="https://github.com/user-attachments/assets/df9db0c7-c1a7-402f-93d0-9f31451af839" />
+![Alt homework11](./images/homework1.jpg)
