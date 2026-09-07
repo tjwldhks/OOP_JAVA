@@ -14,4 +14,4 @@ public class Homework1{
 }
 
 ```
-![Alt homework11](./images/homework1.jpg)
+<img width="399" height="266" alt="homework1" src="https://github.com/user-attachments/assets/df9db0c7-c1a7-402f-93d0-9f31451af839" />
