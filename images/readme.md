@@ -1,3 +1,2 @@
-<img width="200" height="150" alt="스크린샷 2026-09-08 150726" src="https://github.com/user-attachments/assets/d33565e3-11fc-4345-8e7a-bb76643416a7" />
-<img width="150" height="300" alt="스크린샷 2026-09-08 150120" src="https://github.com/user-attachments/assets/55b2f783-9bc3-477b-90f7-37275fb4970d" />
-
+<img width="341" height="96" alt="스크린샷 2026-09-08 151015" src="https://github.com/user-attachments/assets/02d1d025-bcdf-4f2c-aad8-8a548f12fda4" />
+<img width="88" height="648" alt="스크린샷 2026-09-08 151035" src="https://github.com/user-attachments/assets/7dfc2545-059a-47b8-9e2b-ea9d4937b6d5" />
