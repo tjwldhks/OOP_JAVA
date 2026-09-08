@@ -63,4 +63,4 @@ public class homework2 {
 		System.out.println();
 	}
 }
-
+<img width="341" height="96" alt="스크린샷 2026-09-08 151015" src="https://github.com/user-attachments/assets/02d1d025-bcdf-4f2c-aad8-8a548f12fda4" />
