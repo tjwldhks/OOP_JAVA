@@ -69,6 +69,7 @@ public class homework2 {
 
 ### homework3
 public class homework3 {
+
 	public static void main(String[]args) {
 		int n = 22;
 		long[]a = new long[n];
@@ -89,6 +90,7 @@ public class homework3 {
 
 ### homework4
 public class homework4 {
+
 	public static void main(String[]args) {
 		for (int dan = 1; dan <=9; dan++) {
 			for(int i = 1; i<=9; i++) {
