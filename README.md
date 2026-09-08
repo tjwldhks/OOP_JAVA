@@ -68,3 +68,21 @@ public class homework2 {
 ![Alt homework11](./images/homework2.png)
 
 ### homework3
+public class homework3 {
+	public static void main(String[]args) {
+		int n = 22;
+		long[]a = new long[n];
+		a[0] = 1;
+		a[1] = 1;
+		
+		for (int i = 2; i<n; i++) {
+			a[i] = a[i-1]+ a[i-2];
+		}
+		
+		for (int i = 1; i<= 20; i++) {
+			double ratio = (double) a[i+1]/ a[i];
+			System.out.println(a[i+1]+"/"+a[i]+"="+ratio);
+		}
+	}
+}
+![Alt homework11](./images/homework3.png)
