@@ -44,9 +44,9 @@ public class java {
 }
 ![Alt homework11](./images/스크린샷 2026-09-08 151035.png)
 
+### Homework2
 public class homework2 {
 
-	### Homework2
 	public static void main(String[] args) {
 		int n = 20;
 		long[] fib = new long[n];
