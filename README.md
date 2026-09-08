@@ -86,3 +86,16 @@ public class homework3 {
 	}
 }
 ![Alt homework11](./images/homework3.png)
+
+### homework4
+public class homework4 {
+	public static void main(String[]args) {
+		for (int dan = 1; dan <=9; dan++) {
+			for(int i = 1; i<=9; i++) {
+				System.out.printf("%-8s", i +"*"+ dan +"="+(i * dan)+" ");
+			}
+			System.out.println();
+		}
+	}
+}
+![Alt homework11](./images/homework4.png)
