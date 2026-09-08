@@ -41,7 +41,7 @@ public class java {
 		}
 	}
 }
-![Alt OOP_JAVA](./images/스크린샷 2026-09-08 151035.png)
+![Alt homework11](./images/스크린샷 2026-09-08 151035.png)
 
 public class homework2 {
 	
