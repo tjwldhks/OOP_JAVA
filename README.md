@@ -101,3 +101,23 @@ public class homework4 {
 	}
 }
 ![Alt homework11](./images/homework4.png)
+
+### homework5
+public class homework5 {
+	
+	public static void main(String[]args){
+		double pi = 0.0;
+		
+		for (int i=0; i<100000;i++) {
+			int denominator = 2*i+1;
+			
+			if (i%2==0) {
+				pi +=4.0/denominator;
+			}else {
+				pi -=4.0/denominator;
+			}
+		}
+		System.out.println("PI = "+pi);
+	}
+}
+![Alt homework11](./images/homework5.png)
