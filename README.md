@@ -104,20 +104,16 @@ public class homework4 {
 
 ### homework5
 public class homework5 {
-	
 	public static void main(String[]args){
-		double pi = 0.0;
+		int i, n=100, sign=1;
+		double sum=0;
 		
-		for (int i=0; i<100000;i++) {
-			int denominator = 2*i+1;
-			
-			if (i%2==0) {
-				pi +=4.0/denominator;
-			}else {
-				pi -=4.0/denominator;
+		for (i=0; i<n; i++) {
+			sum +=sign*1./((2.*i+1.)*Math.pow(3.,i));
+			sign *=-1;
 			}
-		}
-		System.out.println("PI = "+pi);
+		
+		System.out.println(sum*Math.sqrt(12));
 	}
 }
 ![Alt homework11](./images/homework5.png)
