@@ -118,3 +118,34 @@ public class homework5 {
 	}
 }
 ![Alt homework11](./images/homework5.png)
+
+### homework6
+
+public class homework6 {
+
+	public static  void main(String[]args) {
+		int i,n=10;
+		int array[] =new int[n];
+		int binomial[][]=new int[n][n];
+		float farr[]= new float[n];
+		double darr[]= new double[n];
+		for (i=0; i<n; i++) {
+			binomial[i][0]=binomial[i][i]=1;
+		}
+		printArray(n,binomial);
+	
+		void printArray(int n, int binomial[][]){
+			int i,j;
+			for(i=0; i<n; i++) {
+				for(j=0;j<n;j++) {
+					System.out.print(binomial[i][j]+'');
+				}
+				System.out.println();
+			}
+		}
+	
+	
+	
+	}
+}
+![Alt homework11](./images/homework6.png)
