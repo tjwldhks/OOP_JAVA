@@ -104,6 +104,7 @@ public class homework4 {
 
 ### homework5
 public class homework5 {
+
 	public static void main(String[]args){
 		int i, n=100, sign=1;
 		double sum=0;
