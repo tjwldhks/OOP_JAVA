@@ -121,31 +121,59 @@ public class homework5 {
 
 ### homework6
 
+
 public class homework6 {
 
 	public static  void main(String[]args) {
-		int i,n=10;
-		int array[] =new int[n];
-		int binomial[][]=new int[n][n];
-		float farr[]= new float[n];
-		double darr[]= new double[n];
-		for (i=0; i<n; i++) {
+		int i,j,n=7;
+		int binomial[][] = new int [n][n];
+		
+		for (i=0; i<n;i++) {
 			binomial[i][0]=binomial[i][i]=1;
-		}
-		printArray(n,binomial);
-	
-		void printArray(int n, int binomial[][]){
-			int i,j;
-			for(i=0; i<n; i++) {
-				for(j=0;j<n;j++) {
-					System.out.print(binomial[i][j]+'');
-				}
-				System.out.println();
+	}
+		for (i=2; i<n; i++) {
+			for(j=1; j<i;j++) {
+				binomial[i][j]=binomial[i-1][j-1]+binomial[i-1][j];
 			}
 		}
-	
-	
-	
+		
+		printArray(n, binomial);
+		printExpansion(2, binomial);
+		printExpansion(3, binomial);
+		printExpansion(4, binomial);
+	}
+	static void printArray(int n, int binomial[][]) {
+		int i,j;
+		for(i=0;i<n;i++) {
+			for (j=0;j<=i; j++);{
+				System.out.print(binomial[i][j]+" ");
+			}
+			System.out.println();
+		}
+	}
+	static void printExpansion(int n, int binomial[][]) {
+		int k;
+		System.out.print("(a+b)^" + n + "=");
+		for(k=0;k<=n;k++) {
+			if (binomial[n][k]!=1) {
+				System.out.print(binomial[n][k]);
+			}
+			if(n-k==1) {
+				System.out.print("a");
+			} else if (n-k>1) {
+				System.out.print("a^"+(n-k));
+			}
+			if(k==1) {
+				System.out.print("b");
+			} else if (k>1) {
+				System.out.print("b^"+k);
+			}
+			if(k<n) {
+				System.out.print("+");
+			}
+		}
+		System.out.println();
 	}
 }
+
 ![Alt homework11](./images/homework6.png)
