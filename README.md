@@ -40,12 +40,10 @@
 			System.out.println("");
 		}
 	}
-}
+
 ![Alt homework11](./images/homework1.png)
 
 ### Homework2
-
-public class homework2 {
 
 	public static void main(String[] args) {
 		int n = 20;
@@ -68,7 +66,6 @@ public class homework2 {
 ![Alt homework11](./images/homework2.png)
 
 ### homework3
-public class homework3 {
 
 	public static void main(String[]args) {
 		int n = 22;
@@ -85,12 +82,10 @@ public class homework3 {
 			System.out.println(a[i+1]+"/"+a[i]+"="+ratio);
 		}
 	}
-}
+
 ![Alt homework11](./images/homework3.png)
 
 ### homework4
-
-public class homework4 {
 
 	public static void main(String[]args) {
 		for (int dan = 1; dan <=9; dan++) {
@@ -100,11 +95,10 @@ public class homework4 {
 			System.out.println();
 		}
 	}
-}
+
 ![Alt homework11](./images/homework4.png)
 
 ### homework5
-public class homework5 {
 
 	public static void main(String[]args){
 		int i, n=100, sign=1;
@@ -121,8 +115,6 @@ public class homework5 {
 ![Alt homework11](./images/homework5.png)
 
 ### homework6
-
-public class homework6 {
 
 	public static  void main(String[]args) {
 		int i,j,n=7;
