@@ -81,7 +81,6 @@
 			double ratio = (double) a[i+1]/ a[i];
 			System.out.println(a[i+1]+"/"+a[i]+"="+ratio);
 		}
-	}
 
 ![Alt homework11](./images/homework3.png)
 
@@ -111,7 +110,7 @@
 		
 		System.out.println(sum*Math.sqrt(12));
 	}
-}
+	
 ![Alt homework11](./images/homework5.png)
 
 ### homework6
@@ -166,6 +165,5 @@
 		}
 		System.out.println();
 	}
-}
 
 ![Alt homework11](./images/homework6.png)
