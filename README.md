@@ -60,10 +60,10 @@ for(int i=10; i>=1; i--) {
 		}
 		System.out.println();
 	}
-'''
+```
 ![Alt homework11](./images/homework2.png)
 
-</details
+</details>
 
 ### homework3
 
