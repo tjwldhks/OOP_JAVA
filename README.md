@@ -40,7 +40,6 @@
 			System.out.println("");
 		}
 	}
-
 ![Alt homework11](./images/homework1.png)
 
 ### Homework2
@@ -80,7 +79,6 @@
 			double ratio = (double) a[i+1]/ a[i];
 			System.out.println(a[i+1]+"/"+a[i]+"="+ratio);
 		}
-
 ![Alt homework11](./images/homework3.png)
 
 ### homework4
@@ -93,7 +91,6 @@
 			System.out.println();
 		}
 	}
-
 ![Alt homework11](./images/homework4.png)
 
 ### homework5
@@ -109,7 +106,6 @@
 		
 		System.out.println(sum*Math.sqrt(12));
 	}
-	
 ![Alt homework11](./images/homework5.png)
 
 ### homework6
@@ -164,7 +160,6 @@
 		}
 		System.out.println();
 	}
-
 ![Alt homework11](./images/homework6.png)
 
 ###homework7
@@ -203,5 +198,33 @@
 		System.out.println();
 
 	}
-	
 ![Alt homework11](./images/homework7.png)
+
+###homework8 
+
+public static void main(String[] args) {
+
+		int score[][] = new int[30][4];
+
+		for (int i = 0; i < 30; i++) {
+			for (int j = 0; j < 4; j++) {
+				score[i][j] = (int) (Math.random() * 101);
+			}
+		}
+
+		System.out.println("번호\t국어\t영어\t수학\t과학\t합계");
+
+		// 학생별 점수,합계
+		for (int i = 0; i < 30; i++) {
+			int sum = 0; 
+
+			System.out.print((i + 1) + "\t");
+			for (int j = 0; j < 4; j++) {
+				System.out.print(score[i][j] + "\t");
+				sum = sum + score[i][j];
+			}
+			System.out.println(sum);
+		}
+
+	}
+![Alt homework11](./images/homework8.png)
