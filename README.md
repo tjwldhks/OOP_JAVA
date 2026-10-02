@@ -1,7 +1,8 @@
 # OOP_JAVA
 ### Homework1
+
 <details>
-<summary>homework1 코드 보기</summary>
+	<summary>homework1 코드 보기</summary>
 	
 		for(int i=10; i>=1; i--) {
 			for(int j = 0; j<i; j++) {
