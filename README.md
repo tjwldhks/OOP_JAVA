@@ -35,7 +35,7 @@ for(int i=10; i>=1; i--) {
 }
 ```
 ![homework1 결과](./images/homework1.png)
-</datails>
+</details>
 
 <details>
 <summary>homework2</summary>
@@ -60,7 +60,7 @@ public static void main(String[] args) {
 	}
 ```
 ![Alt homework11](./images/homework2.png)
-</datails>
+</details>
 
 <details>
 <summary>homework3</summary>
@@ -82,7 +82,7 @@ public static void main(String[] args) {
 		}
 ```
 ![Alt homework11](./images/homework3.png)
-</datails>
+</details>
 
 <details>
 <summary>homework4</summary>
@@ -117,7 +117,7 @@ public static void main(String[] args) {
 	}
 ```
 ![Alt homework11](./images/homework5.png)
-</datails>
+</details>
 
 <details>
 <summary>homework6</summary>
@@ -175,7 +175,7 @@ public static void main(String[] args) {
 	}
 ```
 ![Alt homework11](./images/homework6.png)
-</datails>
+</details>
 
 <details>
 <summary>homework7</summary>
@@ -217,7 +217,7 @@ public static void main(String[] args) {
 	}
 ```
 ![Alt homework11](./images/homework7.png)
-</datails>
+</details>
 
 <details>
 <summary>homework8</summary>
@@ -250,4 +250,4 @@ public static void main(String[] args) {
 	}
 ```
 ![Alt homework11](./images/homework8.png)
-</datails>
+</details>
