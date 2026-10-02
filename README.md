@@ -1,5 +1,4 @@
 # OOP_JAVA
-### Homework1
 
 <details>
 <summary>homework1</summary>
@@ -36,8 +35,6 @@
 ![Alt homework11](./images/homework1.png)
 
 <\details>
-
-### Homework2
 
 	public static void main(String[] args) {
 		int n = 20;
