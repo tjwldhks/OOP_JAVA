@@ -1,4 +1,3 @@
-###JAVA
 
 <details>
 <summary>homework1</summary>
@@ -40,6 +39,10 @@ for(int i=10; i>=1; i--) {
 
 </details>
 
+<details>
+<summary>homework2</summary>
+
+```java
 	public static void main(String[] args) {
 		int n = 20;
 		long[] fib = new long[n];
@@ -57,7 +60,10 @@ for(int i=10; i>=1; i--) {
 		}
 		System.out.println();
 	}
+'''
 ![Alt homework11](./images/homework2.png)
+
+</details
 
 ### homework3
 
