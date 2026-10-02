@@ -1,38 +1,40 @@
-# OOP_JAVA
-
 <details>
 <summary>homework1</summary>
-	
-		for(int i=10; i>=1; i--) {
-			for(int j = 0; j<i; j++) {
-			    System.out.print("#");
-			}
-			System.out.println("");
-		}
-		System.out.print("");
 
-		for(int i=1; i<=10; i++) {
-			for(int j = 0; j<10 - i; j++) {
-				System.out.print("");
-			}
-			for(int j = 0; j < i; j++) {
-			    System.out.print("#");
-			}
-			System.out.println("");
-		}
-		System.out.println("");
-	
-		for(int i=10; i>=1; i--) {
-			for(int j = 0; j<10 - i; j++) {
-			    System.out.print("");
-			}
-			for(int j = 0; j < i; j++) {
-			    System.out.print("#");
-			}
-			System.out.println("");
-		}
+```java
+for(int i=10; i>=1; i--) {
+	for(int j = 0; j<i; j++) {
+		System.out.print("#");
 	}
-![Alt homework11](./images/homework1.png)
+	System.out.println("");
+}
+System.out.print("");
+
+for(int i=1; i<=10; i++) {
+	for(int j = 0; j<10 - i; j++) {
+		System.out.print("");
+	}
+	for(int j = 0; j < i; j++) {
+		System.out.print("#");
+	}
+	System.out.println("");
+}
+System.out.println("");
+
+for(int i=10; i>=1; i--) {
+	for(int j = 0; j<10 - i; j++) {
+		System.out.print("");
+	}
+	for(int j = 0; j < i; j++) {
+		System.out.print("#");
+	}
+	System.out.println("");
+}
+```
+
+![homework1 결과](./images/homework1.png)
+
+</details>
 
 	public static void main(String[] args) {
 		int n = 20;
