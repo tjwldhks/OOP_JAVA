@@ -1,10 +1,8 @@
 
 <details>
-<summary>homework1~4</summary>
+<summary>homework1</summary>
 
 ```java
-### homework1
-
 public static void main(String[] args) {
 for(int i=10; i>=1; i--) {
 	for(int j = 0; j<i; j++) {
@@ -37,10 +35,13 @@ for(int i=10; i>=1; i--) {
 }
 ```
 ![homework1 결과](./images/homework1.png)
+</datails>
 
-### homework2
+<details>
+<summary>homework2</summary>
 
-	public static void main(String[] args) {
+```java
+public static void main(String[] args) {
 		int n = 20;
 		long[] fib = new long[n];
 		fib[0] = 1;
@@ -59,9 +60,12 @@ for(int i=10; i>=1; i--) {
 	}
 ```
 ![Alt homework11](./images/homework2.png)
+</datails>
 
-### homework3
+<details>
+<summary>homework3</summary>
 
+```java
 	public static void main(String[]args) {
 		int n = 22;
 		long[]a = new long[n];
@@ -78,9 +82,12 @@ for(int i=10; i>=1; i--) {
 		}
 ```
 ![Alt homework11](./images/homework3.png)
+</datails>
 
-### homework4
+<details>
+<summary>homework4</summary>
 
+```java
 	public static void main(String[]args) {
 		for (int dan = 1; dan <=9; dan++) {
 			for(int i = 1; i<=9; i++) {
@@ -93,8 +100,10 @@ for(int i=10; i>=1; i--) {
 ![Alt homework11](./images/homework4.png)
 </details>
 
-### homework5
+<details>
+<summary>homework5</summary>
 
+```java
 	public static void main(String[]args){
 		int i, n=100, sign=1;
 		double sum=0;
@@ -106,10 +115,14 @@ for(int i=10; i>=1; i--) {
 		
 		System.out.println(sum*Math.sqrt(12));
 	}
+```
 ![Alt homework11](./images/homework5.png)
+</datails>
 
-### homework6
+<details>
+<summary>homework6</summary>
 
+```java
 	public static  void main(String[]args) {
 		int i,j,n=7;
 		int binomial[][] = new int [n][n];
@@ -160,10 +173,14 @@ for(int i=10; i>=1; i--) {
 		}
 		System.out.println();
 	}
+```
 ![Alt homework11](./images/homework6.png)
+</datails>
 
-###homework7
+<details>
+<summary>homework7</summary>
 
+```java
 	public static void main(String[] args) {
 
 		int data[] = new int[20];
@@ -198,10 +215,14 @@ for(int i=10; i>=1; i--) {
 		System.out.println();
 
 	}
+```
 ![Alt homework11](./images/homework7.png)
+</datails>
 
-###homework8 
+<details>
+<summary>homework8</summary>
 
+```java
 	public static void main(String[] args) {
 
 		int score[][] = new int[30][4];
@@ -227,4 +248,6 @@ for(int i=10; i>=1; i--) {
 		}
 
 	}
+```
 ![Alt homework11](./images/homework8.png)
+</datails>
