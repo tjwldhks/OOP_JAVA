@@ -34,8 +34,6 @@
 	}
 ![Alt homework11](./images/homework1.png)
 
-<\details>
-
 	public static void main(String[] args) {
 		int n = 20;
 		long[] fib = new long[n];
