@@ -1,15 +1,7 @@
 # OOP_JAVA
 ### Homework1
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		for(int i=1; i<10; i++) {
-			  for(int j = 0; j<=i; j++) {
-			    System.out.print("#");
-			  }
-			  System.out.println("");
-		}
-		System.out.println("");
+<details>
+<summary>homework8 코드 보기</summary>
 	
 		for(int i=10; i>=1; i--) {
 			for(int j = 0; j<i; j++) {
@@ -41,7 +33,7 @@
 		}
 	}
 ![Alt homework11](./images/homework1.png)
-
+<\details>
 ### Homework2
 
 	public static void main(String[] args) {
