@@ -166,3 +166,43 @@
 	}
 
 ![Alt homework11](./images/homework6.png)
+
+###homework7
+
+public class homework7 {
+	public static void main(String[] args) {
+
+		int data[] = new int[20];
+		for (int i = 0; i < 20; i++)
+			data[i] = (int) (Math.random() * 100);
+
+		// 정렬 전 출력
+		System.out.println("정렬 전");
+		for (int i = 0; i < 20; i++)
+			System.out.print(data[i] + " ");
+		System.out.println();
+
+		// 선택 정렬
+		for (int i = 0; i < 19; i++) {
+			int min = i; // 제일 작은 값의 위치
+
+			for (int j = i + 1; j < 20; j++) {
+				if (data[j] < data[min])
+					min = j; // 더 작은 값을 찾으면 위치 바꾸기
+			}
+
+			// data[i]와 data[min] 바꾸기
+			int temp = data[i];
+			data[i] = data[min];
+			data[min] = temp;
+		}
+
+		// 정렬 후 출력
+		System.out.println("정렬 후");
+		for (int i = 0; i < 20; i++)
+			System.out.print(data[i] + " ");
+		System.out.println();
+
+	}
+	
+![Alt homework11](./images/homework7.png)
