@@ -1,8 +1,10 @@
 
 <details>
-<summary>homework1</summary>
+<summary>homework1~4</summary>
 
 ```java
+### homework1
+
 public static void main(String[] args) {
 for(int i=10; i>=1; i--) {
 	for(int j = 0; j<i; j++) {
@@ -34,15 +36,10 @@ for(int i=10; i>=1; i--) {
 	}
 }
 ```
-
 ![homework1 결과](./images/homework1.png)
 
-</details>
+### homework2
 
-<details>
-<summary>homework2</summary>
-
-```java
 	public static void main(String[] args) {
 		int n = 20;
 		long[] fib = new long[n];
@@ -63,8 +60,6 @@ for(int i=10; i>=1; i--) {
 ```
 ![Alt homework11](./images/homework2.png)
 
-</details>
-
 ### homework3
 
 	public static void main(String[]args) {
@@ -81,6 +76,7 @@ for(int i=10; i>=1; i--) {
 			double ratio = (double) a[i+1]/ a[i];
 			System.out.println(a[i+1]+"/"+a[i]+"="+ratio);
 		}
+```
 ![Alt homework11](./images/homework3.png)
 
 ### homework4
@@ -93,7 +89,9 @@ for(int i=10; i>=1; i--) {
 			System.out.println();
 		}
 	}
+```
 ![Alt homework11](./images/homework4.png)
+</details>
 
 ### homework5
 
