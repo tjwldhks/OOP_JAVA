@@ -169,7 +169,6 @@
 
 ###homework7
 
-public class homework7 {
 	public static void main(String[] args) {
 
 		int data[] = new int[20];
