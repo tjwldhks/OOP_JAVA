@@ -376,7 +376,7 @@ public static void main(String[] args) {
 </details>
 
 <details>
-<summary>homework11</summary>
+<summary>homework12</summary>
 
 ```java
 public static void main(String[] args) {
