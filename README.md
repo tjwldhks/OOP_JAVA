@@ -374,3 +374,103 @@ public static void main(String[] args) {
 ```
 ![Alt homework11](./images/homework11.png)
 </details>
+
+<details>
+<summary>homework11</summary>
+
+```java
+public static void main(String[] args) {
+			Scanner scanner = new Scanner(System.in);
+
+			while (true) {
+				System.out.print("식 입력 > ");
+				String input = scanner.nextLine().trim();
+
+				if (input.equals("q"))
+					break;
+
+				String[] tokens = input.split(" +"); // 공백 여러 개여도 OK
+
+				// 숫자 연산자 숫자 (3개) ~ 숫자 연산자 숫자 연산자 숫자 연산자 숫자 (7개)
+				if (tokens.length < 3 || tokens.length > 7 || tokens.length % 2 == 0) {
+					System.out.println("형식 오류: 숫자 연산자 숫자 (연산자는 3개 이내, 띄어쓰기 필수)");
+					continue;
+				}
+
+				int opCount = tokens.length / 2;
+				double[] nums = new double[opCount + 1];
+				String[] ops = new String[opCount];
+
+				// 숫자와 연산자 분리
+				try {
+					for (int i = 0; i <= opCount; i++) {
+						nums[i] = Double.parseDouble(tokens[i * 2]);
+					}
+				} catch (NumberFormatException e) {
+					System.out.println("형식 오류: 숫자 자리에 숫자가 아닌 값이 있음.");
+					continue;
+				}
+
+				boolean ok = true;
+				for (int i = 0; i < opCount; i++) {
+					ops[i] = tokens[i * 2 + 1];
+					if (!(ops[i].equals("+") || ops[i].equals("-") || ops[i].equals("#") || ops[i].equals("/"))) {
+						ok = false;
+					}
+				}
+				if (!ok) {
+					System.out.println("형식 오류: 연산자는 + - # / 만 쓸 수 있어요. (곱하기는 #)");
+					continue;
+				}
+
+				// 1단계: # 와 / 먼저 계산 (우선순위 높음)
+				double[] n = new double[4];
+				String[] o = new String[3];
+				int cnt = 0;
+				n[0] = nums[0];
+				boolean divZero = false;
+
+				for (int i = 0; i < opCount; i++) {
+					if (ops[i].equals("#")) {
+						n[cnt] = n[cnt] * nums[i + 1];
+					} else if (ops[i].equals("/")) {
+						if (nums[i + 1] == 0) {
+							divZero = true;
+							break;
+						}
+						n[cnt] = n[cnt] / nums[i + 1];
+					} else { // + 또는 - 는 일단 보관
+						o[cnt] = ops[i];
+						cnt++;
+						n[cnt] = nums[i + 1];
+					}
+				}
+
+				if (divZero) {
+					System.out.println("0으로 나눌 수 없음.");
+					continue;
+				}
+
+				// 2단계: + 와 - 를 왼쪽부터 계산
+				double result = n[0];
+				for (int i = 0; i < cnt; i++) {
+					if (o[i].equals("+"))
+						result += n[i + 1];
+					else
+						result -= n[i + 1];
+				}
+
+				// 정수면 정수로, 아니면 소수로 출력
+				if (result == (long) result)
+					System.out.println(input + " = " + (long) result);
+				else
+					System.out.printf("%s = %.4f\n", input, result);
+			}
+
+			scanner.close();
+		}
+```
+![Alt homework11](./images/homework12.png)
+</details>
+
+
