@@ -310,3 +310,67 @@ public static void main(String[] args) {
 ```
 ![Alt homework11](./images/homework10-1.png)
 </details>
+
+<details>
+<summary>homework10</summary>
+
+```java
+	public static void main(String[] args) {
+		int array_count;
+		if (args.length != 1) {
+			return;
+		}
+		array_count = Integer.parseInt(args[0]);
+
+		int[] arr = new int[array_count];
+		for (int i = 0; i < array_count; i++) {
+			arr[i] = (int) (Math.random() * 100) + 1;
+		}
+
+		// 생성된 데이터 출력 (10개마다 줄바꿈)
+		for (int i = 0; i < array_count; i++) {
+			System.out.printf("%3d ", arr[i]);
+			if ((i + 1) % 10 == 0)
+				System.out.println();
+		}
+		System.out.println();
+
+		// 1. 산술평균: 전부 더한 값 / 개수
+		double sum = 0;
+		for (int i = 0; i < array_count; i++) {
+			sum += arr[i];
+		}
+		double arithmetic = sum / array_count;
+
+		// 2. 기하평균: (곱)^(1/n) 
+		double logSum = 0;
+		for (int i = 0; i < array_count; i++) {
+			logSum += Math.log(arr[i]);
+		}
+		double geometric = Math.exp(logSum / array_count);
+
+		// 3. 조화평균: n / (1/a1 + 1/a2 + ... )
+		double invSum = 0;
+		for (int i = 0; i < array_count; i++) {
+			invSum += 1.0 / arr[i];
+		}
+		double harmonic = array_count / invSum;
+
+		// 4. 중앙값: 정렬한 뒤 가운데 값
+		int[] sorted = Arrays.copyOf(arr, array_count);
+		Arrays.sort(sorted);
+		double median;
+		if (array_count % 2 == 1) {
+			median = sorted[array_count / 2];
+		} else {
+			median = (sorted[array_count / 2 - 1] + sorted[array_count / 2]) / 2.0;
+		}
+
+		System.out.printf("arithmetic mean : %f\n", arithmetic);
+		System.out.printf("geometric mean  : %f\n", geometric);
+		System.out.printf("harmonic mean   : %f\n", harmonic);
+		System.out.printf("median          : %f\n", median);
+	}
+```
+![Alt homework11](./images/homework11.png)
+</details>
