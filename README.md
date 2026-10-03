@@ -308,5 +308,5 @@ public static void main(String[] args) {
 		}
 	}
 ```
-![Alt homework11](./images/homework10.png)
+![Alt homework11](./images/homework10-1.png)
 </details>
