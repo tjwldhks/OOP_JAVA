@@ -376,7 +376,7 @@ public static void main(String[] args) {
 </details>
 
 <details>
-<summary>homework12</summary>
+<summary>homework13</summary>
 
 ```java
 public static void main(String[] args) {
@@ -470,7 +470,7 @@ public static void main(String[] args) {
 			scanner.close();
 		}
 ```
-![Alt homework11](./images/homework12.png)
+![Alt homework11](./images/homework13.png)
 </details>
 
 
