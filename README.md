@@ -391,7 +391,6 @@ public static void main(String[] args) {
 
 				String[] tokens = input.split(" +"); // 공백 여러 개여도 OK
 
-				// 숫자 연산자 숫자 (3개) ~ 숫자 연산자 숫자 연산자 숫자 연산자 숫자 (7개)
 				if (tokens.length < 3 || tokens.length > 7 || tokens.length % 2 == 0) {
 					System.out.println("형식 오류: 숫자 연산자 숫자 (연산자는 3개 이내, 띄어쓰기 필수)");
 					continue;
@@ -407,7 +406,7 @@ public static void main(String[] args) {
 						nums[i] = Double.parseDouble(tokens[i * 2]);
 					}
 				} catch (NumberFormatException e) {
-					System.out.println("형식 오류: 숫자 자리에 숫자가 아닌 값이 있음.");
+					System.out.println("형식 오류");
 					continue;
 				}
 
@@ -419,11 +418,11 @@ public static void main(String[] args) {
 					}
 				}
 				if (!ok) {
-					System.out.println("형식 오류: 연산자는 + - # / 만 쓸 수 있어요. (곱하기는 #)");
+					System.out.println("형식 오류: 연산자는 + - # /");
 					continue;
 				}
 
-				// 1단계: # 와 / 먼저 계산 (우선순위 높음)
+				// 1단계: # 와 / 먼저 계산
 				double[] n = new double[4];
 				String[] o = new String[3];
 				int cnt = 0;
@@ -439,7 +438,7 @@ public static void main(String[] args) {
 							break;
 						}
 						n[cnt] = n[cnt] / nums[i + 1];
-					} else { // + 또는 - 는 일단 보관
+					} else {
 						o[cnt] = ops[i];
 						cnt++;
 						n[cnt] = nums[i + 1];
