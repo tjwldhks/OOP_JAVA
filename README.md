@@ -472,11 +472,13 @@ public static void main(String[] args) {
 ![Alt homework11](./images/homework13.png)
 </details>
 
+<details>
+<summary>homework13</summary>
 
-public class Homework14 {
+```java
+public class homework14 {
 	int num[];
-
-	Homework14(int num[]) {
+	homework14(int num[]) {
 		this.num = num;
 	}
 
@@ -507,14 +509,13 @@ public class Homework14 {
 
 	// 중앙값: 원본 순서를 유지하기 위해 복사본을 정렬해서 사용
 	double getMedian() {
-		Homework14 copy = new Homework14(num.clone());
+		homework14 copy = new homework14(num.clone());
 		copy.sorting();
 		int n = copy.num.length;
 		if (n % 2 == 1) return copy.num[n / 2];
 		return (copy.num[n / 2 - 1] + copy.num[n / 2]) / 2.0;
 	}
 
-	// 오름차순 정렬 (선택 정렬)
 	void sorting() {
 		for (int i = 0; i < num.length - 1; i++) {
 			int min = i;
@@ -527,8 +528,6 @@ public class Homework14 {
 		}
 	}
 
-	// start~end 범위를 binSize 간격으로 나눠 히스토그램 출력
-	// scale: 별(*) 1개가 나타내는 개수
 	void drawHistogram(int start, int end, int binSize, int scale) {
 		int binCount = (end - start) / binSize + 1;
 		int count[] = new int[binCount];
@@ -544,12 +543,11 @@ public class Homework14 {
 			int lo = start + b * binSize;
 			int hi = Math.min(lo + binSize - 1, end);
 			System.out.printf("%3d-%3d : ", lo, hi);
-			for (int k = 0; k < count[b] / scale; k++) System.out.print("*");
+			for (int k = 0; k < count[b] / scale; k++) System.out.print("#");
 			System.out.printf(" (%d)\n", count[b]);
 		}
 	}
 
-	// 10개마다 줄바꿈
 	void display() {
 		System.out.printf("%3d :\n", num.length);
 		for (int i = 0; i < num.length; i++) {
@@ -559,11 +557,8 @@ public class Homework14 {
 		System.out.println();
 	}
 
-	// 실행 인자: array_count max_value bin_size display_scale
-	// 예) 100 100 10 1
 	public static void main(String[] args) {
 		if (args.length != 4) {
-			System.out.println("Usage: histogram array_count max_value bin_size display_scale");
 			return;
 		}
 		int arrayCount = Integer.parseInt(args[0]);
@@ -573,10 +568,9 @@ public class Homework14 {
 
 		int data[] = new int[arrayCount];
 		for (int i = 0; i < arrayCount; i++)
-			data[i] = (int) (Math.random() * maxValue) + 1; // 1 ~ maxValue
+			data[i] = (int) (Math.random() * maxValue) + 1;
 
-		Homework14 obj = new Homework14(data);
-		obj.display();
+		homework14 obj = new homework14(data);
 		System.out.printf("Arithmetic Mean : %5.2f\n", obj.getArithmaticMean());
 		System.out.printf("Geometric Mean  : %5.2f\n", obj.getGeometricMean());
 		System.out.printf("Harmonic Mean   : %5.2f\n", obj.getHarmonicMean());
@@ -584,6 +578,6 @@ public class Homework14 {
 		obj.drawHistogram(1, maxValue, binSize, scale);
 	}
 }
-
-
-
+```
+![Alt homework11](./images/homework14.png)
+</details>	
