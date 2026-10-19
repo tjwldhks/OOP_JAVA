@@ -473,3 +473,117 @@ public static void main(String[] args) {
 </details>
 
 
+public class Homework14 {
+	int num[];
+
+	Homework14(int num[]) {
+		this.num = num;
+	}
+
+	double getTotal() {
+		double sum = 0;
+		for (int i = 0; i < num.length; i++) sum += num[i];
+		return sum;
+	}
+
+	// 산술평균: 전부 더한 값 / 개수
+	double getArithmaticMean() {
+		return getTotal() / num.length;
+	}
+
+	// 조화평균: n / (1/a1 + 1/a2 + ...)
+	double getHarmonicMean() {
+		double invSum = 0;
+		for (int i = 0; i < num.length; i++) invSum += 1.0 / num[i];
+		return num.length / invSum;
+	}
+
+	// 기하평균: (a1 * a2 * ... * an)^(1/n) -> 오버플로 방지를 위해 log 사용
+	double getGeometricMean() {
+		double logSum = 0;
+		for (int i = 0; i < num.length; i++) logSum += Math.log(num[i]);
+		return Math.exp(logSum / num.length);
+	}
+
+	// 중앙값: 원본 순서를 유지하기 위해 복사본을 정렬해서 사용
+	double getMedian() {
+		Homework14 copy = new Homework14(num.clone());
+		copy.sorting();
+		int n = copy.num.length;
+		if (n % 2 == 1) return copy.num[n / 2];
+		return (copy.num[n / 2 - 1] + copy.num[n / 2]) / 2.0;
+	}
+
+	// 오름차순 정렬 (선택 정렬)
+	void sorting() {
+		for (int i = 0; i < num.length - 1; i++) {
+			int min = i;
+			for (int j = i + 1; j < num.length; j++) {
+				if (num[j] < num[min]) min = j;
+			}
+			int tmp = num[i];
+			num[i] = num[min];
+			num[min] = tmp;
+		}
+	}
+
+	// start~end 범위를 binSize 간격으로 나눠 히스토그램 출력
+	// scale: 별(*) 1개가 나타내는 개수
+	void drawHistogram(int start, int end, int binSize, int scale) {
+		int binCount = (end - start) / binSize + 1;
+		int count[] = new int[binCount];
+
+		for (int i = 0; i < num.length; i++) {
+			if (num[i] < start || num[i] > end) continue;
+			int idx = (num[i] - start) / binSize;
+			if (idx >= binCount) idx = binCount - 1;
+			count[idx]++;
+		}
+
+		for (int b = 0; b < binCount; b++) {
+			int lo = start + b * binSize;
+			int hi = Math.min(lo + binSize - 1, end);
+			System.out.printf("%3d-%3d : ", lo, hi);
+			for (int k = 0; k < count[b] / scale; k++) System.out.print("*");
+			System.out.printf(" (%d)\n", count[b]);
+		}
+	}
+
+	// 10개마다 줄바꿈
+	void display() {
+		System.out.printf("%3d :\n", num.length);
+		for (int i = 0; i < num.length; i++) {
+			System.out.printf("%3d ", num[i]);
+			if ((i + 1) % 10 == 0) System.out.println();
+		}
+		System.out.println();
+	}
+
+	// 실행 인자: array_count max_value bin_size display_scale
+	// 예) 100 100 10 1
+	public static void main(String[] args) {
+		if (args.length != 4) {
+			System.out.println("Usage: histogram array_count max_value bin_size display_scale");
+			return;
+		}
+		int arrayCount = Integer.parseInt(args[0]);
+		int maxValue = Integer.parseInt(args[1]);
+		int binSize = Integer.parseInt(args[2]);
+		int scale = Integer.parseInt(args[3]);
+
+		int data[] = new int[arrayCount];
+		for (int i = 0; i < arrayCount; i++)
+			data[i] = (int) (Math.random() * maxValue) + 1; // 1 ~ maxValue
+
+		Homework14 obj = new Homework14(data);
+		obj.display();
+		System.out.printf("Arithmetic Mean : %5.2f\n", obj.getArithmaticMean());
+		System.out.printf("Geometric Mean  : %5.2f\n", obj.getGeometricMean());
+		System.out.printf("Harmonic Mean   : %5.2f\n", obj.getHarmonicMean());
+		System.out.printf("Median          : %5.2f\n", obj.getMedian());
+		obj.drawHistogram(1, maxValue, binSize, scale);
+	}
+}
+
+
+
