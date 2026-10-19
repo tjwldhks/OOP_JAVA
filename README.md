@@ -473,7 +473,7 @@ public static void main(String[] args) {
 </details>
 
 <details>
-<summary>homework13</summary>
+<summary>homework14</summary>
 
 ```java
 public class homework14 {
